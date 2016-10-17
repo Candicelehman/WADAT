@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.jumbotron .container {
+  background-image: url('../assets/man-walking-with-phone.png');
+   background-repeat: no-repeat;
+   background-height: 50%;
+}
+.jumbotron {
+  background-color: transparent;
+  background-image: url('../assets/top-map-bkg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
