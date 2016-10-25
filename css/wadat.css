@@ -44,7 +44,10 @@ h1, h2, h3, h4, h5, h6 {
 .dark-blue {
   color: #01374c;
 }
-
+.btn-primary.focus, .btn-primary:focus {
+  background-color: #68c1e6;
+  border-color: #01374c;
+}
 a, .navbar-inverse .navbar-nav > li > a {
   color: #68c1e5;
 }
@@ -55,7 +58,7 @@ a, .navbar-inverse .navbar-nav > li > a {
   background-color: #fff;
 }
 /** when btn-primary is on dark blue background **/
-.btn-success, .navbar-inverse .navbar-toggle  {
+ .navbar-inverse .navbar-toggle  {
   background-color: #daf1f7;
   border-color: #daf1f7;
   color: #01374c;
@@ -92,15 +95,32 @@ a, .navbar-inverse .navbar-nav > li > a {
   color: #449d44;
   background-color: #fff;
 }
-.btn-danger, .btn-danger.active.focus,.btn-danger.active:focus,.btn-danger.active:hover,.btn-danger:active.focus,.btn-danger:active:focus,.btn-danger:active:hover, .btn-danger.focus, .btn-danger:focus {
+.btn-success {
+  border-color: #449d44;
+  color: #449d44;
+  background-color: #fff;
+}
+.btn-danger:hover, .btn-warning:hover, .btn-success:hover {
+  background-color: #f2f2f2;
+}
+.btn-danger, .btn-danger.active.focus,.btn-danger.active:focus, .btn-danger.active:hover,.btn-danger:active.focus, .btn-danger:active:focus, .btn-danger:active:hover, .btn-danger.focus, .btn-danger:focus {
   border-color: #c9302c;
   color: #c9302c;
   background-color: #fff;
 }
-.btn-warning {
+.btn-success:hover {
+  color: #449d44;
+}
+.btn-danger:hover {
+  color: #c9302c;
+}
+.btn-warning:hover {
+  color: #e38d13;
+}
+.btn-warning, .btn-warning.active.focus,.btn-warning.active:focus,.btn-warning.active:hover,.btn-warning:active.focus,.btn-warning:active:focus,.btn-warning:active:hover, .btn-warning.focus, .btn-warning:focus {
+  border-color: #e38d13;
   color: #e38d13;
   background-color: #fff;
-  border-color: #e38d13;
 }
 .label-primary {
   background-color: #68c1e6;
@@ -113,7 +133,7 @@ a, .navbar-inverse .navbar-nav > li > a {
 .navbar-inverse .navbar-toggle .icon-bar:hover {
   background-color: #daf1f7;
 }
-.btn-success:hover, .navbar-inverse .navbar-toggle:hover{
+ .navbar-inverse .navbar-toggle:hover{
   background-color: #68c1e5;
   border-color: #daf1f7;
   color: #fff;
@@ -145,7 +165,7 @@ a, .navbar-inverse .navbar-nav > li > a {
 .navbar-wadat img {
   width: 90%;
   }
-  
+ 
 /* PAGE SECTIONS */
 
 .jumbotron, .jumbotron .container, .jumbotron .row {
@@ -208,9 +228,11 @@ a, .navbar-inverse .navbar-nav > li > a {
   padding-right: 80px;
   padding-bottom: 40px;
 }
-.middle .container h2, .color-section .container h2, .about .container h2 {
+.home h2 {
+  font-size: 5rem;
+}
+.home .middle .container h2, .home .color-section .container h2, .home .about .container h2 {
   text-align: center;
-  font-size: 48px;
   padding-bottom: 50px;
 }
 .phone img {
@@ -250,8 +272,10 @@ i.feature {
 
 /* COMPONENTS */
 
-.panel-header {
-  background-color: #f2f2f2;
+.panel-heading .form{
+  text-align: center;
+  color: #fff;
+  background-color: #01374c;
 }
 .page-header {
   bottom-border-color: #f2f2f2;
@@ -264,15 +288,17 @@ i.feature {
   bottom-border-color: #cfebf2;
   border-color: #daf1f7;
 }
-
+.wadat-symbol {
+  background-image: url('../assets/WADAT-icon-white.png');
+  background-repeat: no-repeat;
+  background-position-x: calc(114%);
+   background-position-y: calc(0);
+}
 /* TABLES */
 th {
   color: #01374c;
 }
-/* DONT THINK I NEED THIS  
-.table table-striped > td {
-  background-color: #cfebf2;
-}*/
+
 .table > thead > tr > th {
   border-bottom-color: #01374c;
 }
@@ -282,7 +308,9 @@ th {
 .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
   border-top-color: #fff;
 }
-
+.table-hover > tbody > tr:hover  {
+  background-color: #cfebf2;
+}
 
 
 /* FOOTER */
