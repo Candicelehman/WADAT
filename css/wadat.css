@@ -26,25 +26,81 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-/* COLORS */
+/* COLORS and BUTTONS */
+
+.primary-blue {
+  background-color: #68c1e6;
+}
+.light-blue {
+  color: #cfebf2;
+}
+.light-grey {
+  background-color: #f2f2f2;
+}
+.dark-blue {
+  color: #01374c;
+}
 
 a, .navbar-inverse .navbar-nav > li > a {
   color: #68c1e5;
 }
+.inner {
+  background-color: #f2f2f2;
+}
+.inner .container {
+  background-color: #fff;
+}
+/** when btn-primary is on dark blue background **/
+.btn-success, .navbar-inverse .navbar-toggle  {
+  background-color: #daf1f7;
+  border-color: #daf1f7;
+  color: #01374c;
+}
+.inverse {
+  border-color: #fff !important;
+}
+.label {
+  border: thin solid;
+}
+.label-default, btn-default:hover {
+  background-color: #f2f2f2;
+}
+.label-default {
+  color: #333;
+  border-color: #cccccc !important;
+}
+
+/** primary blue color button **/
 .btn-primary {
   background-color: #68c1e5;
   border-color: #68c1e5;
   color: #fff;
 }
-.btn-primary:hover {
-  color: #01374c;
-}
-.btn-success, .navbar-inverse .navbar-toggle  {
-  background-color: #daf1f7;
-  border-color: #daf1f7;
-  color: #04384d;
-}
 
+
+.btn-primary:hover, .navbar-inverse .navbar-toggle:hover, .btn-primary.active.focus,.btn-primary.active:focus,.btn-primary.active:hover,.btn-primary:active.focus,.btn-primary:active:focus,.btn-primary:active:hover,.open>.dropdown-toggle.btn-primary.focus,.open>.dropdown-toggle.btn-primary:focus,.open>.dropdown-toggle.btn-primary:hover {
+  background-color: #daf1f7;
+  border-color: #68c1e5;
+  color: #68c1e5;
+}
+.btn-success.active.focus,.btn-success.active:focus,.btn-success:active.focus,.btn-success:active:focus, .btn-success.focus, .btn-success:focus {
+  border-color: #449d44;
+  color: #449d44;
+  background-color: #fff;
+}
+.btn-danger, .btn-danger.active.focus,.btn-danger.active:focus,.btn-danger.active:hover,.btn-danger:active.focus,.btn-danger:active:focus,.btn-danger:active:hover, .btn-danger.focus, .btn-danger:focus {
+  border-color: #c9302c;
+  color: #c9302c;
+  background-color: #fff;
+}
+.btn-warning {
+  color: #e38d13;
+  background-color: #fff;
+  border-color: #e38d13;
+}
+.label-primary {
+  background-color: #68c1e6;
+}
 /**** NAV STYLES */
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -53,11 +109,12 @@ a, .navbar-inverse .navbar-nav > li > a {
 .navbar-inverse .navbar-toggle .icon-bar:hover {
   background-color: #daf1f7;
 }
-.btn-success:hover, .navbar-inverse .navbar-toggle:hover, .btn-success.active.focus,.btn-success.active:focus,.btn-success.active:hover,.btn-success:active.focus,.btn-success:active:focus,.btn-success:active:hover,.open>.dropdown-toggle.btn-success.focus,.open>.dropdown-toggle.btn-success:focus,.open>.dropdown-toggle.btn-success:hover {
+.btn-success:hover, .navbar-inverse .navbar-toggle:hover{
   background-color: #68c1e5;
   border-color: #daf1f7;
   color: #fff;
 }
+
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
   background-color: transparent;
 }
@@ -157,7 +214,7 @@ a, .navbar-inverse .navbar-nav > li > a {
   background-color: #68c1e6;
   margin-bottom: -10px;
 }
-.color-section .container {
+.home .color-section .container {
   background-image: url('../assets/phone-map.png');
   background-repeat: no-repeat;
   background-position: bottom left;
@@ -178,6 +235,31 @@ i.feature {
   color: #fff;
   border-radius: 1.25em; /* or 50% width & line-height */
   
+}
+
+/* COMPONENTS */
+
+.panel-header {
+  background-color: #f2f2f2;
+}
+.page-header {
+  bottom-border-color: #f2f2f2;
+}
+/* TABLES */
+th {
+  color: #01374c;
+}
+.table table-striped > td {
+  background-color: color: #cfebf2;
+}
+.table > thead > tr > th {
+  border-bottom-color: #01374c;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+  background-color: #cfebf2;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  border-top-color: #fff;
 }
 
 /* FOOTER */
