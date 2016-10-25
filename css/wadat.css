@@ -18,14 +18,18 @@ h1, h2, h3, h4, h5, h6 {
   font-style: bold;
   color: #fff;
 }
-.jumbotron h1 {
+.jumbotron h1, .call-to-action-text {
   color: #fff;
   text-shadow: 1px 2px 2px #999;
 }
 .middle .col-md-4 {
   text-align: center;
 }
-
+.sidebar h2,.sidebar h3, .sidebar h4, .sidebar h5 {
+  background-color: #01374c;
+  color: #fff;
+  text-transform: uppercase;
+}
 /* COLORS and BUTTONS */
 
 .primary-blue {
@@ -192,10 +196,17 @@ a, .navbar-inverse .navbar-nav > li > a {
   background-color: #fff;
   opacity: .9;
 }
-.middle .container, .about .container {
+.middle .container, .about .container{
   min-height: 400px;
   padding-top: 140px;
   padding-bottom: 140px;
+}
+.inner .container {
+  min-height: 700px;
+  padding-top: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 40px;
 }
 .middle .container h2, .color-section .container h2, .about .container h2 {
   text-align: center;
@@ -245,22 +256,34 @@ i.feature {
 .page-header {
   bottom-border-color: #f2f2f2;
 }
+.tab-pane .wrap{
+  padding: 20px 0;
+}
+.nav-tabs > li > a:hover {
+  background-color: #cfebf2;
+  bottom-border-color: #cfebf2;
+  border-color: #daf1f7;
+}
+
 /* TABLES */
 th {
   color: #01374c;
 }
+/* DONT THINK I NEED THIS  
 .table table-striped > td {
-  background-color: color: #cfebf2;
-}
+  background-color: #cfebf2;
+}*/
 .table > thead > tr > th {
   border-bottom-color: #01374c;
 }
 .table-striped > tbody > tr:nth-of-type(2n+1) {
-  background-color: #cfebf2;
+  background-color: #f2f2f2;;
 }
 .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
   border-top-color: #fff;
 }
+
+
 
 /* FOOTER */
 
